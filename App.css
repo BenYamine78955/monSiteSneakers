@@ -1,0 +1,45 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 0.3s; /* Reduced transition time */
+}
+.logo:hover {
+  filter: drop-shadow(0 0 1.5em rgba(100, 108, 255, 0.67)); /* Adjusted shadow color and size */
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 1.5em rgba(97, 218, 251, 0.67)); /* Adjusted shadow color and size */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 16s linear; /* Adjusted animation duration */
+  }
+}
+
+.card {
+  padding: 1.5em; /* Reduced padding */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Added subtle box shadow */
+  border-radius: 8px; /* Added border radius */
+}
+
+.read-the-docs {
+  color: #777; /* Darkened text color */
+  font-style: italic; /* Added italic style */
+}
